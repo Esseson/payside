@@ -25,7 +25,7 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <Helmet title={'Home Page'} />
-      <Header title="Home Page">Gatsby Tutorial Starter</Header>
+      <Header title="Payside">Africa's Number One Payment service for Africans by Africans</Header>
       <PostWrapper>
         {edges.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;
@@ -59,7 +59,6 @@ Index.propTypes = {
               cover: PropTypes.object.isRequired,
               path: PropTypes.string.isRequired,
               title: PropTypes.string.isRequired,
-              date: PropTypes.string.isRequired,
               tags: PropTypes.array,
             }),
           }),
@@ -72,7 +71,7 @@ Index.propTypes = {
 export const query = graphql`
   query {
     allMarkdownRemark(
-      limit: 6
+      limit: 3
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
@@ -83,7 +82,6 @@ export const query = graphql`
             title
             path
             tags
-            date(formatString: "MM.DD.YYYY")
             cover {
               childImageSharp {
                 fluid(

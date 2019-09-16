@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-tutorial-starter",
-  "author": "Justin Formentin",
-  "title": "Gatsby V2 Tutorial Starter",
-  "description": "My Blog",
+  "name": "PaySide Inc",
+  "author": "Esseson",
+  "title": "Payside-Payment channel",
+  "description": "Payment Gateway",
   "homepage": "https://gatsby-tutorial-starter.netlify.com",
   "license": "MIT",
   "version": "0.0.7",
