@@ -25,7 +25,7 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <Helmet title={'Home Page'} />
-      <Header title="Payside">Africa's Number One Payment service for Africans by Africans</Header>
+      <Header title="">Africa's Number One Payment service for Africans by Africans</Header>
       <PostWrapper>
         {edges.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;
